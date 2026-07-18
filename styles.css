@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    overflow-x: hidden;
+}
+body{
+    font-family: "DM Sans", sans-serif;
+}
+nav{
+    display: none;
+}
+.icon{
+    display: block;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 10px 30px;
+}
+header{
+    height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow:0 6px 10px rgba(0,0,0,.08);
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap:50px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.headText{
+    color: blue;
+}
+section{
+    background-color: rgb(245, 245, 245);
+}
+.hero{
+    width: auto;
+    margin-top: 50px;
+    padding: 20vh 45px;
+    text-align: center;
+    background-color: aliceblue;
+}
+.heroText{
+    margin-top: 10px;
+}
+button{
+    margin-top: 30px;
+    width: 130px;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: rgb(42, 81, 255);
+    transition:.3s;
+    cursor: pointer;
+}
+.about{
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+}
+.aboutAll{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 60px;
+}
+.left{
+    text-align: left;
+    width: 100%;
+    line-height: 26px;
+}
+.support{
+    margin-top: 20px;
+    height: 100%;
+    padding: 15px;
+    background-color: rgb(255, 215, 215);
+    border-left: 5px solid rgb(255, 104, 59);
+}
+.support a{
+    word-break: break-all;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    gap: 20px;
+}
+.success, .client{
+    border: 1px solid white;
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow:0 20px 20px rgba(0,0,0,.08);
+}
+.successText, .clientText{
+    font-size: 30px;
+    color:blue;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.galery{
+    text-align: center;
+    padding: 0px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 60px;
+    background-color:aliceblue;
+    padding: 15px;
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+    transition:.3s;
+}
+.card > div:hover{
+    transform:translateY(-4px);
+    transition: .3s;
+}
+.card img{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+.card p{
+    font-size: 14px;
+    color: gray;
+    margin: 15px 0px;
+}
+.cardSecond{
+    padding: 0px 30px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+}
+.cardSecond img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img1 {
+    grid-area: img1;
+}
+.restaurant {
+    grid-area: restaurant;
+}
+.saas {
+    grid-area: saas;
+}
+.mobile {
+    grid-area: mobile;
+}
+.commerce {
+    grid-area: commerce;
+}
+.contact{
+    padding: 60px 30px;
+    font-weight: 600;
+}
+.contactText{
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+label{
+    display: block;
+    margin-bottom: 20px;
+}
+.formAll{
+    margin: auto;
+    padding: 25px;
+    background-color: white;
+    border:white 1px solid;
+    width: 100%;
+    height: 100%;
+    line-height: 30px;
+    box-shadow:0 2px 40px rgba(0,0,0,.08);
+}
+input, .submit{
+    width: 100%;
+    height: 35px;
+}
+textarea{
+    width: 100%;
+}
+footer{
+    background-color: rgb(7, 3, 30);
+    width: 100%;
+    height: 100%;
+}
+.lastText{
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    padding: 10px;
+}
+
+@media (min-width: 768px){
+    body, html{
+        overflow-x: hidden;
+    }
+    nav{
+        display: block;
+    }
+    .icon{
+        display: none;
+    }
+    .head{
+        justify-content: space-around;
+        margin: 20px;
+        padding: 20px;
+    }
+    header{
+        position: sticky;
+        width: auto;
+    }
+    .hero{
+        padding: 180px 40px;
+        margin-top: 0;
+    }
+    .aboutAll{
+        flex-direction: row;
+        gap: 25px;
+    }
+    .left{
+        width: 60%;
+    }
+    .support{
+        height: 90px;
+    }
+    .support a{
+        word-break: normal;
+    }
+    .right{
+        width: 40%;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .galery{
+        padding: 80px;
+    }
+    .card{
+        flex-direction: row;
+        width: auto;
+        margin-top: 70px;
+    }
+    .card img{
+        width: 120px;
+        height: 120px;
+    }
+    .card p{
+        margin: 10px 0 0 0;
+    }
+    .cardSecond{
+        padding: 20px 30px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 180px 180px 180px;
+        gap:20px;
+        grid-template-areas:
+            "img1 img1 restaurant"
+            "img1 img1 saas"
+            "mobile commerce commerce";
+    }
+    .contact{
+        padding: 60px;
+    }
+    .formAll{
+        width: 450px;
+        height: 465px;
+    }
+    input, .submit{
+        width: 400px;
+    }
+    textarea{
+        width: 400px;
+    }
+}
+@media (min-width: 1024px){
+    body, html{
+        overflow-x: visible;
+    }
+    .aboutAll{
+        gap: 40px;
+    }
+    .left{
+        width: 600px;
+    }
+    .right{
+        flex-direction: row;
+        width: auto;
+    }
+    .success, .client{
+        width: 200px;
+    }
+    .cardSecond{
+        padding: 20px 90px;
+    }
+}
